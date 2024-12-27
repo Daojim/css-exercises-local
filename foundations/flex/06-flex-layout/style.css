@@ -31,14 +31,51 @@ ul {
   margin: 0;
 }
 
-.header {
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.header,
+.footer {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: auto;
+}
+
+.footer {
+  background-color: #eeeeee;
+  margin-top: auto;
 }
 
 .left-links,
 .right-links {
   display: flex;
-  gap: 5px;
-  padding: 5px;
+  gap: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.input {
+  margin: 10px;
+}
+
+button {
+  flex-shrink: 0;
+  padding: 10px 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
